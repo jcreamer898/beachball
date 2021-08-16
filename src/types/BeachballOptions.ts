@@ -42,6 +42,7 @@ export interface CliOptions {
   prereleasePrefix?: string | null;
   configPath?: string;
   commit?: boolean;
+  verbose?: boolean;
 }
 
 export interface RepoOptions {

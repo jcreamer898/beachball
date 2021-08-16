@@ -45,7 +45,7 @@ export function bumpInPlace(bumpInfo: BumpInfo, options: BeachballOptions) {
   }
 
   // pass 4: Bump all the dependencies packages
-  const dependentModifiedPackages = setDependentVersions(packageInfos, scopedPackages);
+  const dependentModifiedPackages = setDependentVersions(packageInfos, scopedPackages, options);
   dependentModifiedPackages.forEach(pkg => modifiedPackages.add(pkg));
 
   return bumpInfo;
